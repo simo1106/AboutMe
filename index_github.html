@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>郭宇豪 | 嵌入式 | 軟體工程師 </title>
+    <title>郭宇豪 | 個人主頁 & 核心技能</title>
     <style>
         :root {
             --bg-color: #f4f6f9;
@@ -41,8 +41,7 @@
             background-color: var(--primary-color);
             color: #ffffff;
             padding: 40px;
-            border-radius: 12px;
-            margin-bottom: 30px;
+            border-radius: 12px 12px 0 0;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
         }
 
@@ -56,17 +55,36 @@
             font-size: 1.2rem;
             color: #cbd5e0;
             font-weight: 400;
-            margin-bottom: 20px;
         }
 
-        .contact-info {
-            display: block;
-            font-size: 0.95rem;
-            color: #e2e8f0;
+        /* Navigation Bar */
+        nav {
+            background-color: #2d3748;
+            padding: 12px 40px;
+            border-radius: 0 0 12px 12px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
         }
 
-        .contact-info span {
-            margin-right: 20px;
+        nav a {
+            color: #cbd5e0;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 500;
+            margin-right: 25px;
+            padding: 6px 12px;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+        }
+
+        nav a:hover {
+            color: #ffffff;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        nav a.active {
+            color: #ffffff;
+            background-color: var(--accent-color);
         }
 
         /* Section Style */
@@ -94,18 +112,14 @@
         }
 
         /* Grid Layout for Skills */
-        .skills-grid {
-            display: block;
-        }
-
         .skill-category {
-            margin-bottom: 20px;
+            margin-bottom: 25px;
         }
 
         .skill-category h4 {
-            font-size: 1.05rem;
+            font-size: 1.1rem;
             color: #1a202c;
-            margin-bottom: 8px;
+            margin-bottom: 10px;
         }
 
         .tags {
@@ -116,9 +130,9 @@
             display: inline-block;
             background-color: var(--tag-bg);
             color: var(--tag-text);
-            padding: 4px 12px;
+            padding: 5px 14px;
             border-radius: 20px;
-            font-size: 0.85rem;
+            font-size: 0.88rem;
             font-weight: 500;
             margin-right: 8px;
             margin-bottom: 8px;
@@ -127,8 +141,8 @@
         /* Project Cards */
         .project-card {
             border-bottom: 1px solid var(--border-color);
-            padding-bottom: 25px;
-            margin-bottom: 25px;
+            padding-bottom: 30px;
+            margin-bottom: 30px;
         }
 
         .project-card:last-child {
@@ -138,7 +152,7 @@
         }
 
         .project-title {
-            font-size: 1.2rem;
+            font-size: 1.25rem;
             color: var(--accent-color);
             font-weight: 600;
             margin-bottom: 6px;
@@ -148,7 +162,7 @@
             font-size: 0.95rem;
             font-weight: bold;
             color: #718096;
-            margin-bottom: 12px;
+            margin-bottom: 15px;
         }
 
         ul {
@@ -158,17 +172,17 @@
 
         li {
             position: relative;
-            padding-left: 18px;
-            margin-bottom: 8px;
+            padding-left: 20px;
+            margin-bottom: 10px;
             color: #4a5568;
-            font-size: 0.95rem;
+            font-size: 0.98rem;
         }
 
         li::before {
             content: "•";
             color: var(--accent-color);
             font-weight: bold;
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             position: absolute;
             left: 0;
             top: -2px;
@@ -176,15 +190,34 @@
 
         /* Certifications List */
         .cert-list li {
-            font-size: 1rem;
+            font-size: 1.05rem;
             font-weight: 500;
+            color: #2d3748;
+            margin-bottom: 12px;
+        }
+
+
+        .cert-list span {
+            font-size: 0.9rem;
+            color: #718096;
+            font-weight: normal;
+        }
+
+        /* Contact Styles */
+        .contact-grid {
+            margin-top: 20px;
+        }
+
+        .contact-item {
+            font-size: 1.05rem;
+            margin-bottom: 15px;
             color: #2d3748;
         }
 
-        .cert-list span {
-            font-size: 0.85rem;
-            color: #718096;
-            font-weight: normal;
+        .contact-item strong {
+            color: var(--primary-color);
+            display: inline-block;
+            width: 120px;
         }
 
         footer {
@@ -201,16 +234,18 @@
 <body>
 
     <div class="container">
-
         <!-- Header Section -->
         <header>
             <h1>郭宇豪 (Kuo, Yu-Hao)</h1>
             <h2>嵌入式系統 / 韌體 / 軟硬體整合工程師 | Embedded System & Firmware Engineer</h2>
-            <div class="contact-info">
-                <span>📧 Email: your-email@example.com</span>
-                <span>🔗 GitHub: github.com/your-username</span>
-            </div>
         </header>
+
+        <!-- Navigation Bar -->
+        <nav>
+            <a href="index-v2.html" class="active">關於我 & 核心技能</a>
+            <a href="projects-v2.html">實務專案經驗</a>
+            <a href="certs-v2.html">專業證照 & 聯絡方式</a>
+        </nav>
 
         <!-- About Me -->
         <section>
@@ -225,132 +260,60 @@
         <section>
             <h3>核心技術與專業能力</h3>
 
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h4>嵌入式系統與韌體開發 (Embedded & Firmware)</h4>
-                    <div class="tags">
-                        <span class="tag">ESP32-S3 (ESP-IDF)</span>
-                        <span class="tag">FreeRTOS 多工管理</span>
-                        <span class="tag">HT66F2390 Holtek C</span>
-                        <span class="tag">SPI 暫存器控制</span>
-                        <span class="tag">UART 鮑率與腳位映射</span>
-                        <span class="tag">Raspberry Pi</span>
-                    </div>
+            <div class="skill-category">
+                <h4>嵌入式系統與韌體開發 (Embedded & Firmware)</h4>
+                <div class="tags">
+                    <span class="tag">ESP32-S3 (ESP-IDF)</span>
+                    <span class="tag">FreeRTOS 多工管理</span>
+                    <span class="tag">HT66F2390 Holtek C</span>
+                    <span class="tag">SPI 暫存器控制</span>
+                    <span class="tag">UART 鮑率與腳位映射</span>
+                    <span class="tag">Raspberry Pi</span>
                 </div>
+            </div>
 
-                <div class="skill-category">
-                    <h4>邊緣運算與人工智慧 (TinyML & Edge AI)</h4>
-                    <div class="tags">
-                        <span class="tag">Edge Impulse</span>
-                        <span class="tag">FOMO 演算法</span>
-                        <span class="tag">C++ Library 邊緣端部署</span>
-                        <span class="tag">輕量化物件偵測</span>
-                    </div>
+            <div class="skill-category">
+                <h4>邊緣運算與人工智慧 (TinyML & Edge AI)</h4>
+                <div class="tags">
+                    <span class="tag">Edge Impulse</span>
+                    <span class="tag">FOMO 演算法</span>
+                    <span class="tag">C++ Library 邊緣端部署</span>
+                    <span class="tag">輕量化物件偵測</span>
                 </div>
+            </div>
 
-                <div class="skill-category">
-                    <h4>物聯網與網路通訊 (IoT & Communications)</h4>
-                    <div class="tags">
-                        <span class="tag">HTTP WebServer (URI 註冊)</span>
-                        <span class="tag">TCP Socket 雙向低延遲</span>
-                        <span class="tag">MQTT (JSON 解析)</span>
-                        <span class="tag">藍牙通訊 (HC-05)</span>
-                    </div>
+            <div class="skill-category">
+                <h4>物聯網與網路通訊 (IoT & Communications)</h4>
+                <div class="tags">
+                    <span class="tag">HTTP WebServer (URI 註冊)</span>
+                    <span class="tag">TCP Socket 雙向低延遲</span>
+                    <span class="tag">MQTT (JSON 解析)</span>
+                    <span class="tag">藍牙通訊 (HC-05)</span>
                 </div>
+            </div>
 
-                <div class="skill-category">
-                    <h4>行動裝置與軟體開發 (Software Development)</h4>
-                    <div class="tags">
-                        <span class="tag">Python</span>
-                        <span class="tag">Java</span>
-                        <span class="tag">C/C++</span>
-                        <span class="tag">Android Studio (多執行緒)</span>
-                        <span class="tag">SQLite 本地資料庫</span>
-                        <span class="tag">Google Routes API</span>
-                    </div>
+            <div class="skill-category">
+                <h4>行動裝置與軟體開發 (Software Development)</h4>
+                <div class="tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">Java</span>
+                    <span class="tag">C/C++</span>
+                    <span class="tag">Android Studio (多執行緒)</span>
+                    <span class="tag">SQLite 本地資料庫</span>
+                    <span class="tag">Google Routes API</span>
                 </div>
+            </div>
 
-                <div class="skill-category">
-                    <h4>軟硬體整合與工程實務 (Hardware Engineering)</h4>
-                    <div class="tags">
-                        <span class="tag">PWM / SPWM 理論基礎</span>
-                        <span class="tag">手作電路板焊接</span>
-                        <span class="tag">3D 外殼建模設計</span>
-                        <span class="tag">風量與信效度量測</span>
-                    </div>
+            <div class="skill-category">
+                <h4>軟硬體整合與工程實務 (Hardware Engineering)</h4>
+                <div class="tags">
+                    <span class="tag">PWM / SPWM 理論基礎</span>
+                    <span class="tag">手作電路板焊接</span>
+                    <span class="tag">3D 外殼建模設計</span>
+                    <span class="tag">風量與信效度量測</span>
                 </div>
             </div>
         </section>
-
-        <!-- Certifications -->
-        <section>
-            <h3>專業證照</h3>
-            <ul class="cert-list">
-                <li>IT Specialist — Python 國際專業資訊人才認證 <span>(驗證代碼: yyHF-uT6C)</span></li>
-                <li>IT Specialist — Java 國際專業資訊人才認證</li>
-                <li>乙/丙級專業配線相關證照</li>
-                <li>運動教練證 <span>(展現高度團隊協作與嚴謹自律性)</span></li>
-            </ul>
-        </section>
-
-        <!-- Featured Projects -->
-        <section>
-            <h3>實務專案經驗</h3>
-
-            <!-- Project 1 -->
-            <div class="project-card">
-                <div class="project-title">1. 基於 ESP32-S3 與 Android 之邊緣運算導盲避障系統 —「你是我的眼」</div>
-                <div class="project-subtitle">TinyML 邊緣運算 / FreeRTOS 實時多工 / 多軌網路通訊架構整合</div>
-                <ul>
-                    <li><strong>邊緣影像辨識：</strong> 使用 Edge Impulse 平台訓練輕量化 FOMO 物件偵測模型，以純 C++ 函式庫原生部署於 ESP32-S3
-                        端，在完全斷網環境下，仍可自主即時辨識紅綠燈與斑馬線。</li>
-                    <li><strong>高併發韌體架構：</strong> 在 ESP-IDF 環境下導入 FreeRTOS 任務架構。運用 Mutex（互斥鎖）防止週邊資源衝突，並透過
-                        Queue（隊列）在多個任務間安全傳遞 ICM20948 IMU 的高速六軸加速度與陀螺儀結構體數據。</li>
-                    <li><strong>多軌通訊架構整合：</strong> 運用 HTTP 註冊專屬 URI 結構體建立內部 WebServer 進行 OV2640/OV3660 即時路況影像串流；獨立架設 TCP
-                        Socket 確保超聲波避障之緊急警報具備高即時與低延遲性；透過 JSON 打包設備指標並以 MQTT 上傳雲端以便進行遠端穩定性追蹤。</li>
-                    <li><strong>行動端 API 與資料庫整合：</strong> 於 Android Studio 開發專屬導航 App。設計爬蟲擷取 OpenStreetMap 交叉路口資訊並存於本地
-                        SQLite 資料庫；整合 Google Routes API 計算導航路線轉折點，以語音引導視障人士前置避障。</li>
-                </ul>
-            </div>
-
-            <!-- Project 2 -->
-            <div class="project-card">
-                <div class="project-title">2. 微控制器藍牙與物聯網自動化警報系統</div>
-                <div class="project-subtitle">盛群單晶片開發 / 藍牙通訊介面映射 / 雲端自動化連動</div>
-                <ul>
-                    <li><strong>微控制器端韌體開發：</strong> 使用 C 語言對盛群 HT66F2390 微控制器進行全系統底層配置，精準定義系統時脈、手動完成 UART 腳位映射與鮑率參數設定。
-                    </li>
-                    <li><strong>訊號處理與調變：</strong> 擷取環境感測器之類比訊號並進行 ADC 數位轉換，將轉換結果透過 HC-05 藍牙模組進行高穩定度之無線串列傳輸。</li>
-                    <li><strong>雲端連動自動化警報：</strong> 於 MIT App Inventor 2 平台建構行動端接收中樞，設計條件判斷邏輯（如當 ADC > 3800 時）。全自動驅動後端
-                        SmtpClient 發送防護電子郵件，並連動 Line Bot 送出即時簡訊，落實物聯網全自動化防護監控。</li>
-                </ul>
-            </div>
-
-            <!-- Project 3 -->
-            <div class="project-card">
-                <div class="project-title">3. 獨立自主專案：自製智慧空氣清淨機</div>
-                <div class="project-subtitle">軟硬體端到端開發 / 電路板焊接 / 流體密封結構優化 / 成本控管</div>
-                <ul>
-                    <li><strong>電路與控制實作：</strong> 自學 SPWM
-                        弦波脈寬調變理論基礎，獨立設計馬達驅動電路，並手工完成高可靠度之電路板焊接；結合微處理器控制電路，達成手動/粉塵濃度自動雙模控制與無級調速。</li>
-                    <li><strong>流體與結構優化：</strong> 負責 3D
-                        外殼建模設計。針對清淨機核心的「短循環」痛點，特別設計了由木條與塑膠膜組成的風管密封結構，並黏貼海綿填充物以優化風道，確保過濾效能，同時預留未來易拆卸清洗之結構。</li>
-                    <li><strong>嚴謹驗證與成本控管：</strong> 使用專題實驗室之專業設備量測風量與信效度，確保產品實用性。獨立控管開發預算，成功將整體 BOM 成本精確壓低在 6,200 元內。
-                    </li>
-                </ul>
-            </div>
-
-            <!-- Project 4 -->
-            <div class="project-card">
-                <div class="project-title">4. 畢業實務專案：智慧化室內空氣品質控制模組建構</div>
-                <div class="project-subtitle">感測器訊號處理 / 自動化控窗結構</div>
-                <ul>
-                    <li>針對室內二氧化碳與懸浮微粒 (PM2.5) 濃度危害，利用微控電路整合感測器訊號處理。當室內活動人員過多導致 CO2
-                        濃度超標時，微處理器程式會自動運算並驅動硬體機械結構，調節窗戶開度大小以引入外氣換氣，實現智慧化室內空氣品質管理。</li>
-                </ul>
-            </div>
-        </section>
-
     </div>
 
     <footer>
