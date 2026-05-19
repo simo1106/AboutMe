@@ -1,302 +1,98 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>郭宇豪 | 實務專案經驗</title>
-    <style>
-:root {
-    --bg-color: #f4f6f9;
-    --text-color: #2c3e50;
-    --primary-color: #1a365d;
-    --accent-color: #3182ce;
-    --card-bg: #ffffff;
-    --border-color: #e2e8f0;
-    --tag-bg: #ebf8ff;
-    --tag-text: #2b6cb0;
-}
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans TC", sans-serif;
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    line-height: 1.6;
-    padding: 40px 20px;
-}
-
-.container {
-    max-width: 960px;
-    margin: 0 auto;
-}
-
-/* Header Style */
-header {
-    background-color: var(--primary-color);
-    color: #ffffff;
-    padding: 40px;
-    border-radius: 12px 12px 0 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-}
-
-header h1 {
-    font-size: 2.2rem;
-    margin-bottom: 8px;
-    letter-spacing: 1px;
-}
-
-header h2 {
-    font-size: 1.2rem;
-    color: #cbd5e0;
-    font-weight: 400;
-}
-
-/* Navigation Bar */
-nav {
-    background-color: #2d3748;
-    padding: 12px 40px;
-    border-radius: 0 0 12px 12px;
-    margin-bottom: 30px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-}
-
-nav a {
-    color: #cbd5e0;
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: 500;
-    margin-right: 25px;
-    padding: 6px 12px;
-    border-radius: 6px;
-    transition: all 0.2s ease;
-}
-
-nav a:hover {
-    color: #ffffff;
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-nav a.active {
-    color: #ffffff;
-    background-color: var(--accent-color);
-}
-
-/* Section Style */
-section {
-    background-color: var(--card-bg);
-    padding: 35px;
-    border-radius: 12px;
-    margin-bottom: 30px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
-    border: 1px solid var(--border-color);
-}
-
-section h3 {
-    font-size: 1.4rem;
-    color: var(--primary-color);
-    margin-bottom: 20px;
-    border-left: 5px solid var(--accent-color);
-    padding-left: 12px;
-}
-
-p {
-    margin-bottom: 15px;
-    color: #4a5568;
-    text-align: justify;
-}
-
-/* Grid Layout for Skills */
-.skill-category {
-    margin-bottom: 25px;
-}
-
-.skill-category h4 {
-    font-size: 1.1rem;
-    color: #1a202c;
-    margin-bottom: 10px;
-}
-
-.tags {
-    margin-bottom: 15px;
-}
-
-.tag {
-    display: inline-block;
-    background-color: var(--tag-bg);
-    color: var(--tag-text);
-    padding: 5px 14px;
-    border-radius: 20px;
-    font-size: 0.88rem;
-    font-weight: 500;
-    margin-right: 8px;
-    margin-bottom: 8px;
-}
-
-/* Project Cards */
-.project-card {
-    border-bottom: 1px solid var(--border-color);
-    padding-bottom: 30px;
-    margin-bottom: 30px;
-}
-
-.project-card:last-child {
-    border-bottom: none;
-    padding-bottom: 0;
-    margin-bottom: 0;
-}
-
-.project-title {
-    font-size: 1.25rem;
-    color: var(--accent-color);
-    font-weight: 600;
-    margin-bottom: 6px;
-}
-
-.project-subtitle {
-    font-size: 0.95rem;
-    font-weight: bold;
-    color: #718096;
-    margin-bottom: 15px;
-}
-
-ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-li {
-    position: relative;
-    padding-left: 20px;
-    margin-bottom: 10px;
-    color: #4a5568;
-    font-size: 0.98rem;
-}
-
-li::before {
-    content: "•";
-    color: var(--accent-color);
-    font-weight: bold;
-    font-size: 1.3rem;
-    position: absolute;
-    left: 0;
-    top: -2px;
-}
-
-/* Certifications List */
-.cert-list li {
-    font-size: 1.05rem;
-    font-weight: 500;
-    color: #2d3748;
-    margin-bottom: 12px;
-}
-
-
-.cert-list span {
-    font-size: 0.9rem;
-    color: #718096;
-    font-weight: normal;
-}
-
-/* Contact Styles */
-.contact-grid {
-    margin-top: 20px;
-}
-
-.contact-item {
-    font-size: 1.05rem;
-    margin-bottom: 15px;
-    color: #2d3748;
-}
-
-.contact-item strong {
-    color: var(--primary-color);
-    display: inline-block;
-    width: 120px;
-}
-
-footer {
-    text-align: center;
-    font-size: 0.85rem;
-    color: #a0aec0;
-    margin-top: 40px;
-    padding-top: 20px;
-    border-top: 1px solid var(--border-color);
-}
-</style>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<div class="container">
-    <!-- Header Section -->
-    <header>
-        <h1>郭宇豪 (Kuo, Yu-Hao)</h1>
-        <h2>嵌入式系統 / 韌體 / 軟硬體整合工程師 | Embedded System & Firmware Engineer</h2>
-    </header>
+    <div class="container">
 
-    <!-- Navigation Bar -->
-    <nav>
-        <a href="index-v2.html">關於我 & 核心技能</a>
-        <a href="projects-v2.html" class="active">實務專案經驗</a>
-        <a href="certs-v2.html">專業證照 & 聯絡方式</a>
-    </nav>
+        <!-- Header Section -->
+        <header>
+            <h1>郭宇豪 (Kuo, Yu-Hao)</h1>
+            <h2>嵌入式系統 / 軟體工程師 | Embedded System & software Engineer</h2>
+        </header>
 
-    <!-- Featured Projects -->
-    <section>
-        <h3>實務專案經驗</h3>
+        <!-- Navigation Bar -->
+        <nav>
+            <a href="index_github.html">關於我 & 核心技能</a>
+            <a href="projects.html" class="active">專案 & 專題經驗</a>
+            <a href="certs.html">專業證照 & 聯絡方式</a>
+        </nav>
 
-        <!-- Project 1 -->
-        <div class="project-card">
-            <div class="project-title">1. 基於 ESP32-S3 與 Android 之邊緣運算導盲避障系統 —「你是我的眼」</div>
-            <div class="project-subtitle">TinyML 邊緣運算 / FreeRTOS 實時多工 / 多軌網路通訊架構整合</div>
-            <ul>
-                <li><strong>邊緣影像辨識：</strong> 使用 Edge Impulse 平台訓練輕量化 FOMO 物件偵測模型，以純 C++ 函式庫原生部署於 ESP32-S3 端，在完全斷網環境下，仍可自主即時辨識紅綠燈與斑馬線。</li>
-                <li><strong>高併發韌體架構：</strong> 在 ESP-IDF 環境下導入 FreeRTOS 任務架構。運用 Mutex（互斥鎖）防止週邊資源衝突，並透過 Queue（隊列）在多個任務間安全傳遞 ICM20948 IMU 的高速六軸加速度與陀螺儀結構體數據。</li>
-                <li><strong>多軌通訊架構整合：</strong> 運用 HTTP 註冊專屬 URI 結構體建立內部 WebServer 進行 OV2640/OV3660 即時路況影像串流；獨立架設 TCP Socket 確保超聲波避障之緊急警報具備高即時與低延遲性；透過 JSON 打包設備指標並以 MQTT 上傳雲端以便進行遠端穩定性追蹤。</li>
-                <li><strong>行動端 API 與資料庫整合：</strong> 於 Android Studio 開發專屬導航 App。設計爬蟲擷取 OpenStreetMap 交叉路口資訊並存於本地 SQLite 資料庫；整合 Google Routes API 計算導航路線轉折點，以語音引導視障人士前置避障。</li>
-            </ul>
-        </div>
+        <!-- Featured Projects -->
+        <section>
+            <h3>實務專案經驗</h3>
 
-        <!-- Project 2 -->
-        <div class="project-card">
-            <div class="project-title">2. 微控制器藍牙與物聯網自動化警報系統</div>
-            <div class="project-subtitle">盛群單晶片開發 / 藍牙通訊介面映射 / 雲端自動化連動</div>
-            <ul>
-                <li><strong>微控制器端韌體開發：</strong> 使用 C 語言對盛群 HT66F2390 微控制器進行全系統底層配置，精準定義系統時脈、手動完成 UART 腳位映射與鮑率參數設定。</li>
-                <li><strong>訊號處理與調變：</strong> 智慧讀取環境感測器之類比訊號並進行 ADC 數位轉換，將轉換結果透過 HC-05 藍牙模組進行高穩定度之無線串列傳輸。</li>
-                <li><strong>雲端連動自動化警報：</strong> 於 MIT App Inventor 2 平台建構行動端接收中樞，設計條件判斷邏輯（如當 ADC > 3800 時）。全自動驅動後端 SmtpClient 發送防護電子郵件，並連動 Line Bot 送出即時簡訊，落實物聯網全自動化防護監控。</li>
-            </ul>
-        </div>
+            <!-- Project 1 -->
+            <div class="project-card">
+                <div class="project-title">1. 基於 ESP32-S3 與 Android 之邊緣運算導盲避障系統 —「你是我的眼」</div>
+                <div class="project-subtitle">TinyML 邊緣運算 / FreeRTOS 實時多工 / 多軌網路通訊架構整合</div>
+                <ul>
+                    <li><strong>邊緣影像辨識：</strong> 使用 Edge Impulse 平台訓練輕量化 FOMO 物件偵測模型，以純 C++ 函式庫原生部署於 ESP32-S3
+                        端，在完全斷網環境下，仍可自主即時辨識紅綠燈與斑馬線。</li>
+                    <li><strong>高併發韌體架構：</strong> 在 ESP-IDF 環境下導入 FreeRTOS 任務架構。運用 Mutex（互斥鎖）防止週邊資源衝突，並透過
+                        Queue（隊列）在多個任務間安全傳遞 ICM20948 IMU 的高速六軸加速度與陀螺儀結構體數據。</li>
+                    <li><strong>多軌通訊架構整合：</strong> 運用 HTTP 註冊專屬 URI 結構體建立內部 WebServer 進行 OV2640/OV3660 即時路況影像串流；獨立架設
+                        TCP
+                        Socket 確保超聲波避障之緊急警報具備高即時與低延遲性；透過 JSON 打包設備指標並以 MQTT 上傳雲端以便進行遠端穩定性追蹤。</li>
+                    <li><strong>行動端 API 與資料庫整合：</strong> 於 Android Studio 開發專屬導航 App。設計爬蟲擷取 OpenStreetMap
+                        交叉路口資訊並存於本地
+                        SQLite 資料庫；整合 Google Routes API 計算導航路線轉折點，以語音引導視障人士前置避障。</li>
+                </ul>
+            </div>
 
-        <!-- Project 3 -->
-        <div class="project-card">
-            <div class="project-title">3. 獨立自主專案：自製智慧空氣清淨機</div>
-            <div class="project-subtitle">軟硬體端到端開發 / 電路板焊接 / 流體密封結構優化 / 成本控管</div>
-            <ul>
-                <li><strong>電路與控制實作：</strong> 自學 SPWM 弦波脈寬調變理論基礎，獨立設計馬達驅動電路，並手工完成高可靠度之電路板焊接；結合微處理器控制電路，達成手動/粉塵濃度自動雙模控制與無級調速。</li>
-                <li><strong>流體與結構優化：</strong> 負責 3D 外殼建模設計。針對清淨機核心的「短循環」痛點，特別設計了由木條與塑膠膜組成之風管密封結構，並黏貼海綿填充物以優化風道，確保過濾效能，同時預留未來易拆卸清洗之結構。</li>
-                <li><strong>嚴謹驗證與成本控管：</strong> 使用專題實驗室之專業設備量測風量與信效度，確保產品實用性。獨立控管開發預算，成功將整體 BOM 成本精確壓低在 6,200 元內。</li>
-            </ul>
-        </div>
+            <!-- Project 2 -->
+            <div class="project-card">
+                <div class="project-title">2. 微控制器藍牙與物聯網自動化警報系統</div>
+                <div class="project-subtitle">盛群單晶片開發 / 藍牙通訊介面映射 / 雲端自動化連動</div>
+                <ul>
+                    <li><strong>微控制器端韌體開發：</strong> 使用 C 語言對盛群 HT66F2390 微控制器進行全系統底層配置，精準定義系統時脈、手動完成 UART
+                        腳位映射與鮑率參數設定。
+                    </li>
+                    <li><strong>訊號處理與調變：</strong> 智慧讀取環境感測器之類比訊號並進行 ADC 數位轉換，將轉換結果透過 HC-05 藍牙模組進行高穩定度之無線串列傳輸。</li>
+                    <li><strong>雲端連動自動化警報：</strong> 於 MIT App Inventor 2 平台建構行動端接收中樞，設計條件判斷邏輯（如當 ADC > 3800
+                        時）。全自動驅動後端
+                        SmtpClient 發送防護電子郵件，並連動 Line Bot 送出即時簡訊，落實物聯網全自動化防護監控。</li>
+                </ul>
+            </div>
 
-        <!-- Project 4 -->
-        <div class="project-card">
-            <div class="project-title">4. 畢業實務專案：智慧化室內空氣品質控制模組建構</div>
-            <div class="project-subtitle">感測器訊號處理 / 自動化控窗結構</div>
-            <ul>
-                <li>針對室內二氧化碳與懸浮微粒 (PM2.5) 濃度危害，利用微控電路整合感測器訊號處理。當室內活動人員過多導致 CO2 濃度超標時，微處理器程式會自動運算並驅動硬體機械結構，調節窗戶開度大小以引入外氣換氣，實現智慧化室內空氣品質管理。</li>
-            </ul>
-        </div>
-    </section>
-</div>
+            <!-- Project 3 -->
+            <div class="project-card">
+                <div class="project-title">3. 獨立自主專案：自製智慧空氣清淨機</div>
+                <div class="project-subtitle">軟硬體端到端開發 / 電路板焊接 / 流體密封結構優化 / 成本控管</div>
+                <ul>
+                    <li><strong>電路與控制實作：</strong> 學習PWM方波脈寬調變理論基礎，參考馬達驅動電路，並手焊電路板焊接；結合微處理器控制電路，達成手動/粉塵濃度自動雙模控制。</li>
+                    <li><strong>流體與結構優化：</strong> 負責3D
+                        外殼建模設計。針對清淨機核心的「短循環」痛點，特別設計了由木條與塑膠膜組成之風管密封結構，並黏貼海綿填充物以優化風道，確保過濾效能，同時預留未來易拆卸清洗之結構。</li>
+                    <li><strong>嚴謹驗證與成本控管：</strong> 使用專題實驗室之專業設備量測風量與信效度，確保產品實用性。獨立控管開發預算，成功將整體 BOM 成本精確壓低在 6,200
+                        元內。
+                    </li>
+                </ul>
+            </div>
 
-<footer>
-    <p>&copy; 2026 郭宇豪 Yu-Hao Kuo. Built for GitHub Pages.</p>
-</footer>
+            <!-- Project 4 -->
+            <div class="project-card">
+                <div class="project-title">4. 畢業實務專案：智慧化室內空氣品質控制模組建構</div>
+                <div class="project-subtitle">感測器訊號處理 / 自動化控窗結構</div>
+                <ul>
+                    <li>針對室內二氧化碳與懸浮微粒 (PM2.5) 濃度危害，利用微控電路整合感測器訊號處理。當室內活動人員過多導致 CO2
+                        濃度超標時，微處理器程式會自動運算並驅動硬體機械結構，調節窗戶開度大小以引入外氣換氣，實現智慧化室內空氣品質管理。</li>
+                </ul>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 郭宇豪 Yu-Hao Kuo. Built for GitHub Pages.</p>
+    </footer>
 
 </body>
+
 </html>

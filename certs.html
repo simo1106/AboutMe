@@ -1,275 +1,54 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>郭宇豪 | 專業證照 & 聯絡方式</title>
-    <style>
-:root {
-    --bg-color: #f4f6f9;
-    --text-color: #2c3e50;
-    --primary-color: #1a365d;
-    --accent-color: #3182ce;
-    --card-bg: #ffffff;
-    --border-color: #e2e8f0;
-    --tag-bg: #ebf8ff;
-    --tag-text: #2b6cb0;
-}
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans TC", sans-serif;
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    line-height: 1.6;
-    padding: 40px 20px;
-}
-
-.container {
-    max-width: 960px;
-    margin: 0 auto;
-}
-
-/* Header Style */
-header {
-    background-color: var(--primary-color);
-    color: #ffffff;
-    padding: 40px;
-    border-radius: 12px 12px 0 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-}
-
-header h1 {
-    font-size: 2.2rem;
-    margin-bottom: 8px;
-    letter-spacing: 1px;
-}
-
-header h2 {
-    font-size: 1.2rem;
-    color: #cbd5e0;
-    font-weight: 400;
-}
-
-/* Navigation Bar */
-nav {
-    background-color: #2d3748;
-    padding: 12px 40px;
-    border-radius: 0 0 12px 12px;
-    margin-bottom: 30px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-}
-
-nav a {
-    color: #cbd5e0;
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: 500;
-    margin-right: 25px;
-    padding: 6px 12px;
-    border-radius: 6px;
-    transition: all 0.2s ease;
-}
-
-nav a:hover {
-    color: #ffffff;
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-nav a.active {
-    color: #ffffff;
-    background-color: var(--accent-color);
-}
-
-/* Section Style */
-section {
-    background-color: var(--card-bg);
-    padding: 35px;
-    border-radius: 12px;
-    margin-bottom: 30px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
-    border: 1px solid var(--border-color);
-}
-
-section h3 {
-    font-size: 1.4rem;
-    color: var(--primary-color);
-    margin-bottom: 20px;
-    border-left: 5px solid var(--accent-color);
-    padding-left: 12px;
-}
-
-p {
-    margin-bottom: 15px;
-    color: #4a5568;
-    text-align: justify;
-}
-
-/* Grid Layout for Skills */
-.skill-category {
-    margin-bottom: 25px;
-}
-
-.skill-category h4 {
-    font-size: 1.1rem;
-    color: #1a202c;
-    margin-bottom: 10px;
-}
-
-.tags {
-    margin-bottom: 15px;
-}
-
-.tag {
-    display: inline-block;
-    background-color: var(--tag-bg);
-    color: var(--tag-text);
-    padding: 5px 14px;
-    border-radius: 20px;
-    font-size: 0.88rem;
-    font-weight: 500;
-    margin-right: 8px;
-    margin-bottom: 8px;
-}
-
-/* Project Cards */
-.project-card {
-    border-bottom: 1px solid var(--border-color);
-    padding-bottom: 30px;
-    margin-bottom: 30px;
-}
-
-.project-card:last-child {
-    border-bottom: none;
-    padding-bottom: 0;
-    margin-bottom: 0;
-}
-
-.project-title {
-    font-size: 1.25rem;
-    color: var(--accent-color);
-    font-weight: 600;
-    margin-bottom: 6px;
-}
-
-.project-subtitle {
-    font-size: 0.95rem;
-    font-weight: bold;
-    color: #718096;
-    margin-bottom: 15px;
-}
-
-ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-li {
-    position: relative;
-    padding-left: 20px;
-    margin-bottom: 10px;
-    color: #4a5568;
-    font-size: 0.98rem;
-}
-
-li::before {
-    content: "•";
-    color: var(--accent-color);
-    font-weight: bold;
-    font-size: 1.3rem;
-    position: absolute;
-    left: 0;
-    top: -2px;
-}
-
-/* Certifications List */
-.cert-list li {
-    font-size: 1.05rem;
-    font-weight: 500;
-    color: #2d3748;
-    margin-bottom: 12px;
-}
-
-
-.cert-list span {
-    font-size: 0.9rem;
-    color: #718096;
-    font-weight: normal;
-}
-
-/* Contact Styles */
-.contact-grid {
-    margin-top: 20px;
-}
-
-.contact-item {
-    font-size: 1.05rem;
-    margin-bottom: 15px;
-    color: #2d3748;
-}
-
-.contact-item strong {
-    color: var(--primary-color);
-    display: inline-block;
-    width: 120px;
-}
-
-footer {
-    text-align: center;
-    font-size: 0.85rem;
-    color: #a0aec0;
-    margin-top: 40px;
-    padding-top: 20px;
-    border-top: 1px solid var(--border-color);
-}
-</style>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<div class="container">
-    <!-- Header Section -->
-    <header>
-        <h1>郭宇豪 (Kuo, Yu-Hao)</h1>
-        <h2>嵌入式系統 / 韌體 / 軟硬體整合工程師 | Embedded System & Firmware Engineer</h2>
-    </header>
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <h1>郭宇豪 (Kuo, Yu-Hao)</h1>
+            <h2>嵌入式系統 / 軟體工程師 | Embedded System & software Engineer</h2>
+        </header>
 
-    <!-- Navigation Bar -->
-    <nav>
-        <a href="index-v2.html">關於我 & 核心技能</a>
-        <a href="projects-v2.html">實務專案經驗</a>
-        <a href="certs-v2.html" class="active">專業證照 & 聯絡方式</a>
-    </nav>
+        <!-- Navigation Bar -->
+        <nav>
+            <a href="index_github.html">關於我 & 核心技能</a>
+            <a href="projects.html">實務專案經驗</a>
+            <a href="certs.html" class="active">專業證照 & 聯絡方式</a>
+        </nav>
 
-    <!-- Certifications -->
-    <section>
-        <h3>專業證照</h3>
-        <ul class="cert-list">
-            <li>IT Specialist — Python 國際專業資訊人才認證 <span>(驗證代碼: yyHF-uT6C)</span></li>
-            <li>IT Specialist — Java 國際專業資訊人才認證</li>
-            <li>乙/丙級專業配線相關證照</li>
-            <li>運動教練證 <span>(展現高度團隊協作與嚴謹自律性)</span></li>
-        </ul>
-    </section>
+        <!-- Certifications -->
+        <section>
+            <h3>專業證照</h3>
+            <ul class="cert-list">
+                <li>IT Specialist — Python 國際專業資訊人才認證</li>
+                <li>IT Specialist — Java 國際專業資訊人才認證</li>
+                <li>乙/丙級專業配線相關證照</li>
+                <li>運動教練證 <span>(展現高度團隊協作與嚴謹自律性)</span></li>
+            </ul>
+        </section>
 
-    <!-- Contact Info -->
-    <section>
-        <h3>聯絡方式</h3>
-        <div class="contact-grid">
-            <div class="contact-item"><strong>📧 電子信箱：</strong>your-email@example.com</div>
-            <div class="contact-item"><strong>🔗 GitHub 主頁：</strong>github.com/your-username</div>
-            <div class="contact-item"><strong>💼 LinkedIn：</strong>[您的 LinkedIn 連結]</div>
-        </div>
-    </section>
-</div>
+        <!-- Contact Info -->
+        <section>
+            <h3>聯絡方式</h3>
+            <div class="contact-grid">
+                <div class="contact-item"><strong>電子信箱：</strong>hohotyt999888@gmail.com</div>
+                <div class="contact-item"><strong>GitHub 主頁：</strong>github.com/simo1106</div>
+            </div>
+        </section>
+    </div>
 
-<footer>
-    <p>&copy; 2026 郭宇豪 Yu-Hao Kuo. Built for GitHub Pages.</p>
-</footer>
+    <footer>
+        <p>&copy; 2026 郭宇豪 Yu-Hao Kuo. Built for GitHub Pages.</p>
+    </footer>
 
 </body>
+
 </html>
