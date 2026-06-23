@@ -6,6 +6,7 @@ const express = require('express');
 const cors = require('cors');
 const { Client } = require('@elastic/elasticsearch');
 const path = require('path');
+const fs = require('fs');
 
 // 初始化 Express 應用
 const app = express();
@@ -14,6 +15,7 @@ const PORT = process.env.PORT || 3000;
 // 中間件
 app.use(cors());
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname))); // 提供靜態檔案
 
 // ============================================
